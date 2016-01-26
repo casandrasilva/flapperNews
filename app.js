@@ -11,4 +11,5 @@ app.controller('MainCtrl',['$scope',
       {title: 'post 5', upvotes: 4}
     ];
   }
-]);
+])
+.filter('order', OrderFilter);
