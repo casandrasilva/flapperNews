@@ -1,1 +1,1 @@
-# flapperNews
+# JavaScript Elite

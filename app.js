@@ -1,4 +1,4 @@
-var app = angular.module('flapperNews', []);
+var app = angular.module('javascriptElite', []);
 
 app.controller('MainCtrl',['$scope',
   function($scope){
