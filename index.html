@@ -10,7 +10,7 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
         <script src="app.js"></script>
-        <style> .glyphicon-thumbs-up { cursor:pointer } </style>
+
     </head>
     <body ng-app="javascriptElite" ng-controller="MainCtrl">
         <div class="row">
@@ -34,14 +34,27 @@
                     </span>
                 </div>
 
-                <form ng-submit="addPost()">
+                <form ng-submit="addPost()"
+                    style="margin-top:30px;">
                     <h3 style="font-family:Source Code Pro; font-weight:600">Add New Content</h3>
 
-                    <input type="text" placeholder="Title" style="font-family:Roboto; font-weight:500;" ng-model="title"></input>
+                    <div class="form-group">
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Title"
+                            style="font-family:Roboto; font-weight:500;"
+                            ng-model="title"></input>
+                    </div>
                     <br>
-                    <input type="text" placeholder="Link" style="font-family:Roboto; font-weight:500;" ng-model="link"></input>
+                    <div class="form-group">
+                        <input type="text"
+                            class="form-control"
+                            placeholder="Link"
+                            style="font-family:Roboto; font-weight:500;"
+                            ng-model="link"></input>
+                    </div>
                     <br>
-                    <button type="submit" style="font-family:Roboto; font-weight:500;">Post</button>
+                    <button type="submit" class="btn btn-primary" style="font-family:Roboto; font-weight:500;">Post</button>
                 </form>
             </div>
         </div>
